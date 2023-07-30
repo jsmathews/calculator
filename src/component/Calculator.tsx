@@ -14,7 +14,7 @@ export default function Calculator() {
 
     const detectKeydown = (event: KeyboardEvent) => {
         const regex = /^[0-9+\-*/.%]*$/;
-        console.log(event.key)
+
         if (regex.test(event.key)) {
             handleClickOnNumPad(event.key);
         } else if (event.key === 'Backspace') {

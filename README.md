@@ -31,6 +31,6 @@ To run this project, follow the below steps:
 ```
 $ Clone the project and execute the below commands in the root directory of the project.
 $ npm install
-$ npm run
+$ npm start
 ```
 * Open the link: http://localhost:3000

@@ -14,15 +14,32 @@
     input[type=text] {
         border: none;
         margin-bottom: 10px;
+        pointer-events: none;
         text-align: end;
+    }
+
+    input[type=text].expression {
+        font-size: 1em;
+    }
+
+    input[type=text].answer {
+        font-size: 1.5em;
     }
 }
 
 .numberPad {
     display: grid;
     gap: 10px 10px;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 50px);
+
+    .numbers {
+        font-size: 1.2em;
+    }
+
+    .operator {
+        font-size: 1.2em;
+    }
 }
 
 .grid-item {
